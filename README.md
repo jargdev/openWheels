@@ -1,105 +1,102 @@
+<p align="center">
+  <img src="./assets/gh/thumb.png" alt="openWheels Logo" />
+</p>
 
-# 🎡 openWheels
 
-**openWheels** is a fan-driven project to bring back the browser version of *Happy Wheels* — in a way that’s clean, understandable, and open to everyone. We’re untangling the original JavaScript/TypeScript code so folks can learn from it, mod it, and keep it alive for the long haul.
 
----
+# openWheels
 
-## 🎯 What We're Aiming For
-
-* ✨ **Readable Code** — Turn that messy obfuscated code into something humans can actually understand
-* 💾 **Preserve the Game** — Make sure *Happy Wheels* keeps rolling, even as tech changes
-* 🔧 **Modding Power** — Open the doors for new characters, levels, and custom tweaks
-* 📚 **Learn by Doing** — Explore how a real, full-featured browser game works under the hood
+**openWheels** is a community-led effort to deobfuscate, understand, and restore the original JavaScript/Typescript port of *Happy Wheels*. This project aims to preserve the game's codebase, improve readability, and open the door for learning, modding, and long-term community maintenance.
 
 ---
 
-## 🗂️ Project Layout
+## 🎯 Project Goals
 
-Here's what you'll find in the repo:
+- ✨ **Readable Code** — Reverse obfuscation to make the codebase human-friendly
+- 💾 **Preservation** — Keep the legacy of *Happy Wheels* alive and accessible
+- 🔧 **Modding Support** — Enable custom characters, levels, and tweaks
+- 📚 **Educational Value** — Learn from a real-world browser game architecture
+
+---
+
+## 🗂️ Project Structure
 
 ```
 openWheels/
-├── assets/              # Fonts and game graphics
+├── assets/              # Fonts and extracted game resources
 │   └── fonts/
-├── dependencies.js      # External libraries (like PIXI.js)
-├── favicon.ico          # That little Happy Wheels icon
-├── happywheels.js       # The original game code (we’re deobfuscating this)
-├── index.html           # The main webpage for the game
-├── main.js              # Where we hook into and tweak game logic
-├── pixi.js              # The rendering engine
-├── readme.md            # You're reading it!
-├── run.bat              # Quick-launch for Windows
-└── style.css            # Basic visual styling
+├── dependencies.js      # External library loader (likely PIXI, etc.)
+├── favicon.ico          # Game favicon
+├── happywheels.js       # Original game bundle (currently being deobfuscated)
+├── index.html           # Main HTML entry point
+├── main.js              # Project-specific JS hook into game logic
+├── pixi.js              # PIXI.js game rendering library
+├── readme.md            # This file
+├── run.bat              # Windows batch file to serve the game locally
+└── style.css            # Base styling
 ```
-
 ---
 
-## 🚀 How to Run It
+## 🚀 Running the Game Locally
 
-You can play the game locally in your browser — it’s super easy:
+You can run the project locally with any static file server. If you're on Windows, you can double-click `run.bat` to launch it.
 
-### 🖥️ Quick Start (Windows)
-
-Just double-click `run.bat` and your browser should open it up.
-
-### 💻 Or use the command line:
-
+### Or use the command line:
 ```bash
-# With Python
+# Python 3.x
 python -m http.server
 
 # Or with Node.js
 npx serve .
-```
+````
 
-Then go to [http://localhost:8000](http://localhost:8000) (or whichever port your server picks).
-
----
-
-## 📌 Project Status
-
-### ✅ Done
-
-* 🔍 Beautified and cleaned up the original game code
-* 🖥️ Runs locally with no issues
-* 🌐 Hooked into the official server via a CORS proxy
-
-### 🛠️ Currently Working On
-
-* 🧠 Giving clear names to confusing/obfuscated functions and variables
-* 🧩 Breaking big systems (like physics and rendering) into modules
-* 📜 Writing up docs so everyone can understand the game’s architecture
+Then visit [http://localhost:8000](http://localhost:8000) (or whatever port your server uses).
 
 ---
 
-## 🤝 Want to Help?
+## 📌 Current Progress
 
-We’d love your contributions! Here’s how you can pitch in:
+### ✅ Completed
+- 🔍 **Initial Deobfuscation** — Code has been beautified and demangled from its minified form
+- 🖥️ **Local Execution** — Game successfully runs locally via static hosting
+- 🌐 **CORS Proxy Integration** — Connected to the official game server using a CORS proxy
 
-* Clean up and refactor the code
-* Document how certain parts of the game work
-* Report bugs or strange behavior
-* Help split up the monolithic code into smaller, reusable pieces
-* Share your findings by opening an Issue or Pull Request
+### 🛠️ In Progress
+- 🧠 Mapping obfuscated function/variable names to meaningful identifiers
+- 🧩 Modularizing key systems (physics, rendering, input, etc.)
+- 📜 Writing documentation and architecture notes
 
 ---
 
-## ⚖️ Legal Stuff
+## 🧠 How You Can Help
 
-> **Disclaimer:** This is a fan-made project created for learning and preservation. All original *Happy Wheels* assets and code are the property of **Jim Bonacci / Fancy Force**.
->
-> We don’t distribute any of the original proprietary files and don’t claim ownership of the content. This project is being shared in the spirit of fair use — for education and community preservation.
+We welcome contributions of all kinds:
+
+* Refactor obfuscated code
+* Document known functions and class behaviors
+* Identify game bugs or rendering issues
+* Help modularize the code
+* Report findings via Issues or PRs
+
+---
+
+## ⚖️ Legal
+
+> **Disclaimer:** This is a fan-made, educational project. All assets, names, and intellectual property related to *Happy Wheels* are owned by **Jim Bonacci / Fancy Force**. This project does not distribute the original proprietary files and does not claim ownership of the game's content.
+
+We aim to operate under fair use for reverse engineering and preservation.
+
+---
+
+## 📢 Community & Support
+
+Feel free to open issues, start discussions, or suggest features via GitHub.
 
 ---
 
 ## 🧾 Credits
 
-* 🎮 **Jim Bonacci / Fancy Force** – Creator of *Happy Wheels*
-* 🖼️ **PIXI.js** – Rendering engine behind the visuals
-* 🔧 **The openWheels community** – Reverse engineering, cleanup, and documentation
-
----
-
-Got questions? Want to collaborate? Head over to our [GitHub Issues](https://github.com/fvbuk-johnson2254/openWheels/issues) and start the conversation!
+* **Jim Bonacci / Fancy Force** – Original creator of *Happy Wheels*
+* **PIXI.js** – Rendering engine used in the JS port
+* **The openWheels team** – Reverse engineering
 
