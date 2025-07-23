@@ -9,6 +9,10 @@
 **openWheels** is a community-led effort to deobfuscate, understand, and restore the original JavaScript/Typescript port of *Happy Wheels*. This project aims to preserve the game's codebase, improve readability, and open the door for learning, modding, and long-term community maintenance.
 
 ---
+<p align="center">
+  <a href="https://discord.gg/Fmb6dHJp5R">
+  <img src="./assets/gh/discord.png" alt="Join our discord!" /> </a>
+</p>
 
 ## 🎯 Project Goals
 
