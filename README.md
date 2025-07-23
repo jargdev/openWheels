@@ -21,7 +21,7 @@ Here's what you'll find in the repo:
 ```
 openWheels/
 ├── assets/              # Fonts and game graphics
-│   └── fonts/
+├── fonts/
 ├── dependencies.js      # External libraries (like PIXI.js)
 ├── favicon.ico          # That little Happy Wheels icon
 ├── happywheels.js       # The original game code (we’re deobfuscating this)
