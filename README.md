@@ -25,7 +25,7 @@
 openWheels/
 ├── assets/              # Fonts and game graphics
 ├── fonts/
-├── dependencies.js      # External things (like splitting up sprite sheets, etc.)
+├── dependencies.js      # External things (like splitting up sprite sheets, etc.) (we’re deobfuscating this)
 ├── favicon.ico          # That little Happy Wheels icon
 ├── happywheels.js       # The original game code (we’re deobfuscating this)
 ├── index.html           # The main webpage for the game
