@@ -15,7 +15,6 @@
 - ✨ **Readable Code** — Reverse obfuscation to make the codebase human-friendly
 - 💾 **Preservation** — Keep the legacy of *Happy Wheels* alive and accessible
 - 🔧 **Modding Support** — Enable custom characters, levels, and tweaks
-- 📚 **Educational Value** — Learn from a real-world browser game architecture
 
 ---
 
