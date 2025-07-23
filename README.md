@@ -23,23 +23,28 @@
 
 ```
 openWheels/
-├── assets/              # Fonts and extracted game resources
-│   └── fonts/
-├── dependencies.js      # External library loader (likely PIXI, etc.)
-├── favicon.ico          # Game favicon
-├── happywheels.js       # Original game bundle (currently being deobfuscated)
-├── index.html           # Main HTML entry point
-├── main.js              # Project-specific JS hook into game logic
-├── pixi.js              # PIXI.js game rendering library
-├── readme.md            # This file
-├── run.bat              # Windows batch file to serve the game locally
-└── style.css            # Base styling
+├── assets/              # Fonts and game graphics
+├── fonts/
+├── dependencies.js      # External things (like splitting up sprite sheets, etc.)
+├── favicon.ico          # That little Happy Wheels icon
+├── happywheels.js       # The original game code (we’re deobfuscating this)
+├── index.html           # The main webpage for the game
+├── main.js              # Where we hook into and tweak game logic
+├── pixi.js              # The rendering engine
+├── readme.md            # You're reading it!
+├── run.bat              # Quick-launch for Windows
+└── style.css            # Basic visual styling
 ```
+
 ---
 
-## 🚀 Running the Game Locally
+## 🚀 How to Run It
 
-You can run the project locally with any static file server. If you're on Windows, you can double-click `run.bat` to launch it.
+You can play the game locally in your browser — it’s super easy:
+
+### 🖥️ Quick Start (Windows)
+
+Just double-click `run.bat` and your browser should open it up.
 
 ### Or use the command line:
 ```bash
